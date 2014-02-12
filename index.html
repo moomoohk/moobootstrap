@@ -56,8 +56,7 @@
 	        }
 	    }
 	});
-</script>
-  
+	</script>  
 </head>
 
 <body onload="prettyPrint()">
@@ -137,20 +136,19 @@
   </header>
   
 
-  <section>
-	  <h1>MooBootstrap</h1>
+	<section>
+		<h1>MooBootstrap</h1>
+
+<p>MooBootstrap is a utility I wrote in Java which makes update detection and self updating really easy.</p>
+
+<p>Check out the <a href="https://github.com/moomoohk/moobootstrap/blob/master/README.md">README.md</a> for an overview.</p>
+
+<h2>Getting started</h2>
+
+<p>MooBootstrap works with an XML file (hereby referred to as “changelog.xml”) which contains all your changelog information. Your changelog.xml file needs to follow a certain format so that MooBootstrap can understand it and extract the information. It should look like so:				</p>
+
 		<p>
-			MooBootstrap is a utility I wrote in Java which makes update detection and self updating really easy.
-			<br>
-			<br>
-			Check out the <a href="https://github.com/moomoohk/moobootstrap/blob/master/README.md">README.md</a> for an overview.
-		</p>
-		
-		<h2>Getting started</h2>
-		<p>
-			MooBootstrap works with an XML file (hereby referred to as "changelog.xml") which contains all your changelog information. Your changelog.xml file needs to follow a certain format so that MooBootstrap can understand it and extract the information. It should look like so:
-			
-			<code class="prettyprint" filename="sample.xml">
+			<code class="prettyprint" filename="example.xml">
 				<pre>
 &lt;bootstrapChangelog&gt;
 	&lt;remoteBuildNumber&gt;2&lt;/remoteBuildNumber&gt;
@@ -174,14 +172,18 @@
 				</pre>
 			</code>
 		</p>
-		
-		<h2>//TODO</h2>
-		<p>
-			<ul>
-				<li>Integrate XML schemas somehow (.xsd) and maybe create a tool which makes it easy to create and maintain changelog.xml</li>
-			</ul>
-		</p>
-  </section>
+		<p>Notes:</p>
+
+<ol>
+  <li>You can have as many builds as you want. You’re not limited to 2 as in the example</li>
+  <li>The <code>&lt;remoteBuildNumber&gt;</code> element should contain the number of the latest build from the <code>&lt;build&gt;</code> list</li>
+</ol>
+
+<h2>//TODO</h2>
+
+<p>Integrate XML schemas somehow (.xsd) and maybe create a tool which makes it easy to create and maintain changelog.xml</p>
+
+	</section>
   
 <!-- @todo fix the footer touching the bottom of the screen -->
 	<div id="footer">
