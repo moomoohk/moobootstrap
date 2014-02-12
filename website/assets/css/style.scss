@@ -191,16 +191,19 @@ section {
 			li {
 				float: none; 
 				border-top: 1px solid #6b727c;
-				border-bottom: 1px solid #575f6a; position: relative;
+				border-bottom: 1px solid #575f6a; 
+				border-left: 1px solid #575f6a;
+				position: relative;
 				
 				a {
 					padding: 15px 40px;
 					color: #fff;
 					
 					&:hover {
-						background: #4b545f;
+						background: #2f2f2f;
 					}
-					
+				
+						
 					&:active {
 						background: $active;
 					}
@@ -209,7 +212,9 @@ section {
 			
 			ul {
 				z-index: 10;
-				position: absolute; left: 100%; top:0;
+				position: absolute; 
+				left: 100%; 
+				top: -1px;
 			}
 		}
 	}
