@@ -5,4 +5,4 @@ Notes:
 
 ##//TODO
 
-Integrate XML schemas somehow (.xsd) and maybe create a tool which makes it easy to create and maintain changelog.xml
+* Integrate XML schemas somehow (.xsd) and maybe write a tool which makes it easy to create and maintain changelog.xml
