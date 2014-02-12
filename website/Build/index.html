@@ -35,11 +35,12 @@
 <link rel='stylesheet' href='assets/css/style.css'>
   <script src='assets/js/jquery-1.8.3.min.js'></script>
 <script src='assets/js/app.js'></script>
+<script src='assets/js/escape.js'></script>
   
   <link href="assets/favicon.ico" rel="shortcut icon">
   <link href="" rel="apple-touch-icon">
   
-  <title>moomoohk</title>
+  <title>moomoohk/moobootstrap</title>
   
 </head>
 
@@ -127,6 +128,42 @@
 			<br>
 			<br>
 			Check out the <a href="https://github.com/moomoohk/moobootstrap/blob/master/README.md">README.md</a> for an overview.
+		</p>
+		
+		<h2>Getting started</h2>
+		<p>
+			MooBootstrap works with an XML file (hereby referred to as "changelog.xml") which contains all your changelog information. Your changelog.xml file needs to follow a certain format so that MooBootstrap can understand it and extract the information. It should look like so:
+			
+			<code class="XML" filename="sample.xml">
+				<pre>
+&lt;bootstrapChangelog&gt;
+	&lt;remoteBuildNumber&gt;2&lt;/remoteBuildNumber&gt;
+	&lt;changeLog&gt;
+		&lt;build buildNumber=&quot;1&quot;&gt;
+			&lt;buildVersionString&gt;1.0&lt;/buildVersionString&gt;
+			&lt;changes&gt;
+				+ Initial version
+			&lt;/changes&gt;
+		&lt;/build&gt;
+		&lt;build buildNumber=&quot;2&quot;&gt;
+			&lt;buildVersionString&gt;1.0&lt;/buildVersionString&gt;
+			&lt;changes&gt;
+				+ Added a feature
+				- Removed a feature
+				* Changed a feature
+			&lt;/changes&gt;
+		&lt;/build&gt;
+	&lt;/changeLog&gt;
+&lt;/bootstrapChangelog&gt;
+				</pre>
+			</code>
+		</p>
+		
+		<h2>//TODO</h2>
+		<p>
+			<ul>
+				<li>Integrate XML schemas somehow (.xsd) and maybe create a tool which makes it easy to create and maintain changelog.xml</li>
+			</ul>
 		</p>
   </section>
   
