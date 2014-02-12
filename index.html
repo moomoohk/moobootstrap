@@ -151,7 +151,7 @@
 <p>MooBootstrap works with an XML file (hereby referred to as “changelog.xml”) which contains all your changelog information. Your changelog.xml file needs to follow a certain format so that MooBootstrap can understand it and extract the information. It should look like so:				</p>
 
 		<p>
-			<code class="prettyprint" filename="changelog.xml">
+			<code class="prettyprint linenums" filename="changelog.xml">
 				<pre>
 &lt;bootstrapChangelog&gt;
 	&lt;remoteBuildNumber&gt;2&lt;/remoteBuildNumber&gt;
@@ -175,17 +175,21 @@
 				</pre>
 			</code>
 		</p>
-		<p>Notes:</p>
+		<p><em>Notes:</em></p>
 
 <ol>
   <li>You can have as many builds as you want. You’re not limited to 2 as in the example</li>
   <li>The <code>&lt;remoteBuildNumber&gt;</code> element should contain the number of the latest build from the <code>&lt;build&gt;</code> list</li>
+  <li>You can write anything in the <code>&lt;changes&gt;</code> element but I recommend following the format I used above</li>
 </ol>
+
+<p>Once you&#8217;ve hosted your changelog.xml on a server you can start writing the client which interacts with it.</p>
 
 <h2>//TODO</h2>
 
 <ul>
   <li>Integrate XML schemas somehow (.xsd) and maybe write a tool which makes it easy to create and maintain changelog.xml</li>
+  <li>Extend the API to support more features (not sure what but I feel like it could do more)</li>
 </ul>
 
 	</section>
