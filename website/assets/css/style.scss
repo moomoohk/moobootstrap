@@ -72,7 +72,7 @@ section {
 	/* THANK YOU http://perishablepress.com/perfect-pre-tags/ */
 	pre {
 		border-radius: 5px;
-		height: 200px;
+		height: 300px;
 		overflow-x: auto;
 		overflow-y: auto;
 		margin-left: 10px;
@@ -295,4 +295,12 @@ section {
 		border: 0;
 		background-color: #7d93f3;
 	}
+}
+
+.prettify .pun {
+	color: rgb(61, 61, 61);	
+}
+
+.prettify .atv {
+	color: blue;
 }

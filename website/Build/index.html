@@ -33,18 +33,34 @@
   <link rel='stylesheet' href='assets/css/normalize.css'>
 <link rel='stylesheet' href='assets/css/fonts.css'>
 <link rel='stylesheet' href='assets/css/style.css'>
+<link rel='stylesheet' href='assets/js/google-code-prettify/prettify.css'>
   <script src='assets/js/jquery-1.8.3.min.js'></script>
 <script src='assets/js/app.js'></script>
-<script src='assets/js/escape.js'></script>
+<script src='assets/js/google-code-prettify/prettify.js'></script>
   
   <link href="assets/favicon.ico" rel="shortcut icon">
   <link href="" rel="apple-touch-icon">
   
   <title>moomoohk/moobootstrap</title>
   
+  <script type="text/javascript">
+	$('a[href*=#]:not([href=#])').click(function() {
+	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
+		var target = $(this.hash);
+		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+			return false;
+	        }
+	    }
+	});
+</script>
+  
 </head>
 
-<body>
+<body onload="prettyPrint()">
 
   <header>
     <!-- @todo Do mobile styling -->
@@ -134,7 +150,7 @@
 		<p>
 			MooBootstrap works with an XML file (hereby referred to as "changelog.xml") which contains all your changelog information. Your changelog.xml file needs to follow a certain format so that MooBootstrap can understand it and extract the information. It should look like so:
 			
-			<code class="XML" filename="sample.xml">
+			<code class="prettyprint" filename="sample.xml">
 				<pre>
 &lt;bootstrapChangelog&gt;
 	&lt;remoteBuildNumber&gt;2&lt;/remoteBuildNumber&gt;
@@ -167,7 +183,7 @@
 		</p>
   </section>
   
-
+<!-- @todo fix the footer touching the bottom of the screen -->
 	<div id="footer">
 		© moomoohk 2014
 	</div>
