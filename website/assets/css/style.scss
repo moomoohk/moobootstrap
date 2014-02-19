@@ -1,10 +1,6 @@
 $active: #47515A;
 $curvature: 2px;
 
-html {
-  height: 100%;
-}
-
 body {
   //background: url(apple-touch-icon.png) no-repeat center center;
   background: #AFC1D1;
@@ -44,7 +40,7 @@ body {
 }
 
 section {
-	color: #272727;
+	color: #ffffff;
 	background: #667AB3;
 	margin-top: 10px;
 	border-radius: $curvature;
@@ -68,8 +64,13 @@ section {
 	}
 	
 	a {
-		color: #1F0D4D;
+		color: #3232AC; 
 		text-decoration: none;
+		
+		&:hover {
+			color: #BBBABA; 
+			text-decoration: underline;
+		}
 	}
 	
 	h2 {

@@ -56,10 +56,20 @@
 	        }
 	    }
 	});
-	</script>  
+	</script>
+	
+	<script type="text/javascript">
+		function deleteNums() {
+			prettyPrint();
+			$("ol.linenums").each(function(index) { 
+				if($(this).children().length == 1)
+					$(this).remove();
+			});
+		}
+	</script>
 </head>
 
-<body onload="prettyPrint()">
+<body onload="deleteNums()">
 
   <header>
     <!-- @todo Do mobile styling -->
