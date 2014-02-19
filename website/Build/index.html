@@ -142,7 +142,7 @@
 	<section>
 		<h1>MooBootstrap</h1>
 
-<p>MooBootstrap is a utility I wrote in Java which makes update detection and self updating really easy.</p>
+<p>MooBootstrap is a <a href="http://stackoverflow.com/questions/1254542/what-is-bootstrapping">bootstrap</a> I wrote in Java which makes update detection and self updating really easy.</p>
 
 <p>Check out the <a href="https://github.com/moomoohk/moobootstrap/blob/master/README.md">README.md</a> for an overview.</p>
 
@@ -163,7 +163,7 @@
 			&lt;/changes&gt;
 		&lt;/build&gt;
 		&lt;build buildNumber=&quot;2&quot;&gt;
-			&lt;buildVersionString&gt;1.0&lt;/buildVersionString&gt;
+			&lt;buildVersionString&gt;2.0&lt;/buildVersionString&gt;
 			&lt;changes&gt;
 				+ Added a feature
 				- Removed a feature
@@ -181,6 +181,7 @@
   <li>You can have as many builds as you want. You’re not limited to 2 as in the example</li>
   <li>The <code>&lt;remoteBuildNumber&gt;</code> element should contain the number of the latest build from the <code>&lt;build&gt;</code> list</li>
   <li>You can write anything in the <code>&lt;changes&gt;</code> element but I recommend following the format I used above</li>
+  <li>It is recommended that your elements are kept in the same order as the example so that your changelog.xml will be forward compatible with newer versions of the bootstrap</li>
 </ol>
 
 <p>Once you&#8217;ve hosted your changelog.xml on a server you can start writing the client which interacts with it.</p>

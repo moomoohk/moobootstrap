@@ -1,6 +1,6 @@
 #MooBootstrap
 
-MooBootstrap is a utility I wrote in Java which makes update detection and self updating really easy.
+MooBootstrap is a [bootstrap](http://stackoverflow.com/questions/1254542/what-is-bootstrapping) I wrote in Java which makes update detection and self updating really easy.
 
 Check out the [README.md](https://github.com/moomoohk/moobootstrap/blob/master/README.md) for an overview.
 
