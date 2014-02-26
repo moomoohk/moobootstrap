@@ -148,9 +148,8 @@
   <section class="announcement">
   	<p>This site is still very much under construction! Sorry for all the empty pages and 404's</p>
   </section>
-
-	<section>
-		<h1>MooBootstrap</h1>
+<section>
+	<h1>MooBootstrap</h1>
 
 <p>MooBootstrap is a <a href="http://stackoverflow.com/questions/1254542/what-is-bootstrapping">bootstrap</a> I wrote in Java which makes update detection and self updating really easy.</p>
 
@@ -160,9 +159,9 @@
 
 <p>MooBootstrap works with an XML file (hereby referred to as “changelog.xml”) which contains all your changelog information. Your changelog.xml file needs to follow a certain format so that MooBootstrap can understand it and extract the information. It should look like so:				</p>
 
-		<p>
-			<code class="prettyprint linenums" filename="changelog.xml">
-				<pre>
+	<p>
+		<code class="prettyprint linenums" filename="changelog.xml">
+			<pre>
 &lt;bootstrapChangelog&gt;
 	&lt;remoteBuildNumber&gt;2&lt;/remoteBuildNumber&gt;
 	&lt;changeLog&gt;
@@ -182,10 +181,10 @@
 		&lt;/build&gt;
 	&lt;/changeLog&gt;
 &lt;/bootstrapChangelog&gt;
-				</pre>
-			</code>
-		</p>
-		<p><em>Notes:</em></p>
+			</pre>
+		</code>
+	</p>
+	<p><em>Notes:</em></p>
 
 <ol>
   <li>You can have as many builds as you want. You’re not limited to 2 as in the example</li>
@@ -194,7 +193,7 @@
   <li>It is recommended that your elements are kept in the same order as the example so that your changelog.xml will be forward compatible with newer versions of the bootstrap</li>
 </ol>
 
-<p>Once you&#8217;ve hosted your changelog.xml on a server you can start writing the client which interacts with it.</p>
+<p>Once you’ve hosted your changelog.xml on a server you can start writing the client which interacts with it.</p>
 
 <h2>//TODO</h2>
 
@@ -203,8 +202,14 @@
   <li>Extend the API to support more features (not sure what but I feel like it could do more)</li>
 </ul>
 
-	</section>
-  
+	<p id="downloads">
+	<h2>Downloads</h2>
+	<ul>
+		<li><a href="https://github.com/moomoohk/moobootstrap/tarball/master">tar.gz</a></li>
+		<li><a href="https://github.com/moomoohk/moobootstrap/zipball/master">.zip</a></li>
+	</ul>
+</p>
+</section>
 <!-- @todo fix the footer touching the bottom of the screen -->
 	<div id="footer">
 		© moomoohk 2014
