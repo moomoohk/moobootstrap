@@ -6,13 +6,12 @@
 
 		<!-- @reload -->
 
-		<link href="//fonts.googleapis.com/css?family=PT+Sans:400italic,400,700italic,700" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans:400italic,400,700italic,700" rel="stylesheet" type="text/css">
 
 		<!-- @stylesheet normalize fonts style prettify -->
-		<!-- @javascript jquery-1.8.3.min app prettify -->
+		<!-- @javascript jquery-1.8.3.min app prettify konami -->
 
 		<link href="<!-- @path favicon.ico -->" rel="shortcut icon">
-		<link href="" rel="apple-touch-icon">
 		<title><!-- $title | moomoohk --></title>
 		<script type="application/javascript">
 			function onLoad() {
@@ -38,6 +37,7 @@
 			}
 		</script>
 		<script type="application/javascript">
+			/* Slideshow widget */
 			var selectedIndex = 0;
 			var speed = 5000;
 			var timer;
@@ -93,6 +93,16 @@
 	</head>
 
 	<body onload="onLoad()">
+		<script>
+			/* Oh what's this */
+			$(document).ready(function() {
+				new Konami(function() {
+					var audioElement = document.createElement("audio");
+					audioElement.setAttribute("src", "<!-- @path aristotle -->");
+					audioElement.setAttribute("autoplay", "autoplay");
+				});
+			});
+		</script>
 		<header>
 			<!-- @include _nav -->
 		</header>
