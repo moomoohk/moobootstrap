@@ -159,32 +159,28 @@
 
 <p>MooBootstrap works with an XML file (hereby referred to as “changelog.xml”) which contains all your changelog information. Your changelog.xml file needs to follow a certain format so that MooBootstrap can understand it and extract the information. It should look like so:				</p>
 
-	<p>
-	<pre>
-		<code class="prettyprint linenums" filename="changelog.xml">
-&lt;bootstrapChangelog&gt;
-	&lt;remoteBuildNumber&gt;2&lt;/remoteBuildNumber&gt;
-	&lt;changeLog&gt;
-		&lt;build buildNumber=&quot;1&quot;&gt;
-			&lt;buildVersionString&gt;1.0&lt;/buildVersionString&gt;
-			&lt;changes&gt;
-				+ Initial version
-			&lt;/changes&gt;
-		&lt;/build&gt;
-		&lt;build buildNumber=&quot;2&quot;&gt;
-			&lt;buildVersionString&gt;2.0&lt;/buildVersionString&gt;
-			&lt;changes&gt;
-				+ Added a feature
-				- Removed a feature
-				* Changed a feature
-			&lt;/changes&gt;
-		&lt;/build&gt;
-	&lt;/changeLog&gt;
+<pre><code>&lt;bootstrapChangelog&gt;
+    &lt;remoteBuildNumber&gt;2&lt;/remoteBuildNumber&gt;
+    &lt;changeLog&gt;
+        &lt;build buildNumber="1"&gt;
+            &lt;buildVersionString&gt;1.0&lt;/buildVersionString&gt;
+            &lt;changes&gt;
+                + Initial version
+            &lt;/changes&gt;
+        &lt;/build&gt;
+        &lt;build buildNumber="2"&gt;
+            &lt;buildVersionString&gt;2.0&lt;/buildVersionString&gt;
+            &lt;changes&gt;
+                + Added a feature
+                - Removed a feature
+                * Changed a feature
+            &lt;/changes&gt;
+        &lt;/build&gt;
+    &lt;/changeLog&gt;
 &lt;/bootstrapChangelog&gt;
-		</code>
-	</pre>
-	</p>
-	<p><em>Notes:</em></p>
+</code></pre>
+
+<p><em>Notes:</em></p>
 
 <ol>
   <li>You can have as many builds as you want. You’re not limited to 2 as in the example</li>
